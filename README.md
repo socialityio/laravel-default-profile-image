@@ -12,7 +12,7 @@ Install using composer:
 Edit `app/config/app.php` and add the `providers`
 
     'providers' => [
-        'DefaultProfileImage' => 'A6digital\Image\DefaultProfileImageServiceProvider',
+        'A6digital\Image\DefaultProfileImageServiceProvider'
     ]
 
     
@@ -20,8 +20,9 @@ Edit `app/config/app.php` and add the `providers`
 
 To create a profile image just do
 
-	$img = \DefaultProfileImage::create("Name Surname")
-	Storage::put("profile.png", $img->encode());
+	$img = \DefaultProfileImage::create("Name Surname");
+	\Storage::put("profile.png", $img->encode());
+
 	
 This will create a profile image that has 512px width&height using the first letters of name and surname.
 
@@ -29,5 +30,5 @@ This will create a profile image that has 512px width&height using the first let
 
 Create a white color text over black color background profile image that has 216px width&height.
 
-	$img = \DefaultProfileImage::create("Name Surname", 256, '#000', '#FFF')
-	Storage::put("profile.png", $img->encode());
+	$img = \DefaultProfileImage::create("Name Surname", 256, '#000', '#FFF');
+	\Storage::put("profile.png", $img->encode());
