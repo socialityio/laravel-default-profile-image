@@ -8,8 +8,6 @@ Laravel package to create default profile image using name of user.
 Add `a6digital/laravel-default-profile-image` to `composer.json`.
 
     "a6digital/laravel-default-profile-image": "1.*"
-    
-Run `composer update` to pull down the latest version of Country List.
 
 Edit `app/config/app.php` and add the `alias`
 
