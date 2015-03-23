@@ -8,12 +8,6 @@ use Exception;
 
 class DefaultProfileImage
 {
-	
-    /**
-     */
-    protected function __construct ()
-    {
-    }
 
     /**
      * @param string $name
@@ -39,8 +33,8 @@ class DefaultProfileImage
 		if(count($words) >= 2) $str = $words[0][0].$words[1][0];
 		else $str = substr($name_ascii, 0, 2);
 
-		$img = ImageManagerStatic::canvas($size, $size, $background_color)->text($str, $size / 2, $size / 2, function($font) {
-		    $font->file(public_path('assets/fonts/OpenSans-Semibold.ttf'));
+		$img = ImageManagerStatic::canvas($size, $size, $background_color)->text($str, $size / 2, $size / 2, function($font) use($size, $text_color) {
+		    $font->file((__DIR__.'/../../../font/OpenSans-Semibold.ttf'));
 		    $font->size($size / 2);
 		    $font->color($text_color);
 		    $font->align('center');

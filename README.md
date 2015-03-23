@@ -9,23 +9,25 @@ Install using composer:
 
     composer require a6digital/laravel-default-profile-image
 
-Edit `app/config/app.php` and add the `alias`
+Edit `app/config/app.php` and add the `providers`
 
-    'aliases' => array(
-        'DefaultProfileImage' => 'A6Digital\Image\DefaultProfileImage',
-    )
+    'providers' => [
+        'DefaultProfileImage' => 'A6digital\Image\DefaultProfileImageServiceProvider',
+    ]
 
     
 ## Basic Usage
 
 To create a profile image just do
 
-	DefaultProfileImage::create("Name Surname")
+	$img = \DefaultProfileImage::create("Name Surname")
+	Storage::put("profile.png", $img->encode());
 	
-This will create a profile image that has 512px diameter circle using the first letters of name and surname.
+This will create a profile image that has 512px width&height square using the first letters of name and surname.
 
 ## Advanced Usage
 
-Create a white color text over black color background profile image that has 216px diameter.
+Create a white color text over black color background profile image that has 216px width&height.
 
-	DefaultProfileImage::create("Name Surname", 256, '#000', '#FFF')
+	$img = \DefaultProfileImage::create("Name Surname", 256, '#000', '#FFF')
+	Storage::put("profile.png", $img->encode());
