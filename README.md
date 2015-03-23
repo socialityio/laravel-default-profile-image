@@ -23,7 +23,7 @@ To create a profile image just do
 	$img = \DefaultProfileImage::create("Name Surname")
 	Storage::put("profile.png", $img->encode());
 	
-This will create a profile image that has 512px width&height square using the first letters of name and surname.
+This will create a profile image that has 512px width&height using the first letters of name and surname.
 
 ## Advanced Usage
 
