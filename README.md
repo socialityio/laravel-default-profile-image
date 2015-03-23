@@ -5,9 +5,9 @@ Laravel package to create default profile image using name of user.
 
 ## Installation
 
-Add `a6digital/laravel-default-profile-image` to `composer.json`.
+Install using composer:
 
-    "a6digital/laravel-default-profile-image": "1.*"
+    composer require a6digital/laravel-default-profile-image
 
 Edit `app/config/app.php` and add the `alias`
 
