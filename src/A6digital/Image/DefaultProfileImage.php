@@ -1,6 +1,6 @@
 <?php
 
-namespace A6Digital\Image;
+namespace A6digital\Image;
 
 use Illuminate\Support\Str;
 use Intervention\Image\ImageManagerStatic;

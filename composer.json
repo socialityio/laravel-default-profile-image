@@ -23,7 +23,7 @@
     },
 	"autoload" : {
 		"psr-0" : {
-			"a6digital\\Image" : "src/"
+			"A6digital\\Image" : "src/"
 		}
 	},
 	"support" : {
