@@ -1,4 +1,5 @@
 # Laravel Default Profile Image
+[![Latest Stable Version](https://poser.pugx.org/a6digital/laravel-default-profile-image/v/stable.svg)](https://packagist.org/packages/a6digital/laravel-default-profile-image) [![Total Downloads](https://poser.pugx.org/a6digital/laravel-default-profile-image/downloads.svg)](https://packagist.org/packages/a6digital/laravel-default-profile-image) [![Latest Unstable Version](https://poser.pugx.org/a6digital/laravel-default-profile-image/v/unstable.svg)](https://packagist.org/packages/a6digital/laravel-default-profile-image) [![License](https://poser.pugx.org/a6digital/laravel-default-profile-image/license.svg)](https://packagist.org/packages/a6digital/laravel-default-profile-image)
 
 Laravel package to create default profile image using name of user.
 
