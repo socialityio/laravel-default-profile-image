@@ -37,3 +37,11 @@ Create a white color text over black color background profile image that has 216
 	\Storage::put("profile.png", $img->encode());
 
 ![Profile Small Image](https://raw.githubusercontent.com/a6digital/laravel-default-profile-image/master/docs/images/profile-small.png)
+
+
+Using a custom font
+
+	$img = \DefaultProfileImage::create("@ Lamoni", 256, "#212121", "#FFF", '/var/www/public/fonts/RobotoDraftRegular.woff');
+	\Storage::put("profile.png", $img->encode());
+	
+![Profile Small Image](https://raw.githubusercontent.com/a6digital/laravel-default-profile-image/master/docs/images/profile-font-roboto.png)
