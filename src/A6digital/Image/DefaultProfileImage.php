@@ -12,6 +12,9 @@ class DefaultProfileImage
 	/**
 	 * @param string $name
 	 * @param int $size
+	 * @param string $background_color
+	 * @param string $text_color
+	 * @param string $font_file
 	 * @return ImageManagerStatic
 	 * @throws Exception
 	 */
