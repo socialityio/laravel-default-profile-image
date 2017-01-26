@@ -37,12 +37,18 @@ class DefaultProfileImage
             throw new Exception("Font file not found");
         }
 
-		$str = "";
-		$name_ascii = strtoupper(Str::ascii($name));
+        $str = "";
+        $name_ascii = strtoupper(Str::ascii($name));
 
-		$words = preg_split("/[\s,_-]+/", $name_ascii);
-		if(count($words) >= 2) $str = $words[0][0].$words[1][0];
-		else $str = substr($name_ascii, 0, 2);
+        $words = preg_split("/[\s,_-]+/", $name_ascii);
+
+        if(count($words) > 2) {
+            $str = $words[0][0].$words[2][0];
+        } else if (count($words) == 2) {
+            $str = $words[0][0].$words[1][0];
+        } else {
+            $str = substr($name_ascii, 0, 2);
+        }
 
 		$img = ImageManagerStatic::canvas($size, $size, $background_color)->text($str, $size / 2, $size / 2, function($font) use($size, $text_color, $font_file) {
 			$font->file($font_file);
