@@ -16,7 +16,7 @@ class DefaultProfileImageServiceProvider extends ServiceProvider
     public function register()
     {
         // Register 'defaultprofileimage' instance container to our defaultprofileimage object
-        $this->singleton('defaultprofileimage', function($app)
+        $this->app->singleton('defaultprofileimage', function($app)
         {
             return new DefaultProfileImage;
         });
