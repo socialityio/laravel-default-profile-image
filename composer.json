@@ -1,5 +1,5 @@
 {
-	"name" : "nturnage/laravel-default-profile-image",
+	"name" : "a6digital/laravel-default-profile-image",
 	"description" : "Laravel package to create default profile image using name of user.",
 	"type" : "laravel-library",
 	"authors" : [{
@@ -11,7 +11,7 @@
 	"keywords" : [
 		"laravel default profile image"
 	],
-	"homepage" : "https://github.com/nturnage/laravel-default-profile-image",
+	"homepage" : "https://github.com/a6digital/laravel-default-profile-image",
 	"license" : [
 		"MIT"
 	],
